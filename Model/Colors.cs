@@ -42,7 +42,7 @@ namespace StyleChange.Model
         }
 
         /// <summary>
-        /// Задает цвет поверхностей Windows
+        /// Задает стиль поверхностей Windows
         /// </summary>
         public ColorStyle ColorStyle { get; set; }
 

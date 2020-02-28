@@ -28,8 +28,13 @@ namespace StyleChange.Model
         /// Возвращает текущий путь до картинки
         /// </summary>
         public string Path { get { return path; } }
+        /// <summary>
+        /// Задает или возвращает тип фона рабочего стола
+        /// </summary>
         public BackgroundType BackgroundType { get; set; }
-
+        /// <summary>
+        /// Задает или возвращает стиль заполнения рабочего стола
+        /// </summary>
         public BackgroundStyle BackgroundStyle { get; set; }
 
         public Background()
@@ -47,6 +52,9 @@ namespace StyleChange.Model
         }
     }
 
+    /// <summary>
+    /// Определяет тип фона рабочего стола
+    /// </summary>
     [Serializable]
     public enum BackgroundType
     {
@@ -66,6 +74,9 @@ namespace StyleChange.Model
         SlideShow,
     }
 
+    /// <summary>
+    /// Определяет стиль заполнения рабочего стола
+    /// </summary>
     [Serializable]
     public enum BackgroundStyle
     {

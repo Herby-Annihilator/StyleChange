@@ -4,3 +4,9 @@ C:\VS_Projects\StyleChange\bin\Debug\StyleChange.pdb
 C:\VS_Projects\StyleChange\obj\Debug\StyleChange.csprojAssemblyReference.cache
 C:\VS_Projects\StyleChange\obj\Debug\StyleChange.exe
 C:\VS_Projects\StyleChange\obj\Debug\StyleChange.pdb
+D:\Проекты  в студии\StyleChange\bin\Debug\StyleChange.exe.config
+D:\Проекты  в студии\StyleChange\bin\Debug\StyleChange.exe
+D:\Проекты  в студии\StyleChange\bin\Debug\StyleChange.pdb
+D:\Проекты  в студии\StyleChange\obj\Debug\StyleChange.csprojAssemblyReference.cache
+D:\Проекты  в студии\StyleChange\obj\Debug\StyleChange.exe
+D:\Проекты  в студии\StyleChange\obj\Debug\StyleChange.pdb
