@@ -6,20 +6,17 @@ using System.Threading.Tasks;
 using Microsoft.Win32;
 using System.Activities;
 using System.Configuration;
+using System.Windows.Forms.VisualStyles;
 using System.Windows.Forms;
 using System.Drawing.Design;
+using System.Drawing;
 using System.Runtime.InteropServices;
 
 namespace StyleChange
 {
     class Program
     {
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
 
-        const int SPI_SETDESKWALLPAPER = 20;
-        const int SPIF_UPDATEINIFILE = 0x01;
-        const int SPIF_SENDWININICHANGE = 0x02;
         static void Main(string[] args)
         {
             //RegistryKey key = Registry.CurrentUser.CreateSubKey("Control Panel\\Desktop", true);
@@ -36,12 +33,17 @@ namespace StyleChange
 
            // registry.SetValue("ButtonFace", "255 255 255"); // prev = 212 208 200
             registry.Close();
+            VisualStyleRenderer visualStyleRenderer = new VisualStyleRenderer(VisualStyleElement.Taskbar.BackgroundBottom.Normal);
+            visualStyleRenderer.GetColor(ColorProperty.FillColor).ToString();
+            int part = visualStyleRenderer.Part;
+            int state = visualStyleRenderer.State;
+            visualStyleRenderer.SetParameters(visualStyleRenderer.Class, 2, 3);
 
-            
-            SystemParametersInfo(SPI_SETDESKWALLPAPER,
-            0,
-            "C:\\Users\\Данил\\Рабочий стол темы\\Светлая\\1.bmp",
-            SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
+
+            //SystemParametersInfo(SPI_SETDESKWALLPAPER,
+            //0,
+            //"C:\\Users\\Данил\\Рабочий стол темы\\Светлая\\1.bmp",
+            //SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
 
             
             Console.ReadKey(true);
