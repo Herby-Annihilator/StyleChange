@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StyleChange.Controllers
+namespace StyleChange.Model.SPIParameters
 {
-    class Class1
+    internal static class IconsParameters
     {
+
     }
 }
