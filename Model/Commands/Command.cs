@@ -30,12 +30,14 @@ namespace StyleChange.Model.Commands
         /// </summary>
         public virtual Executor[] Executors { get; protected set; }
 
-        Command()
-        {
+        /// <summary>
+        /// Каждая команда считывает нужные ей данные из реестра и создает объект себя же, и кладет его в стек вызовов
+        /// </summary>
+        protected abstract void CreateSnapshot();
 
-        }
-        //================================================
-        //  Подумать над структурой отмены действий
-        //================================================
+        /// <summary>
+        /// Стек вызовов, хранит все вызовы всех команд, которые меняли состояние системы
+        /// </summary>
+        protected static CallStack callStack = new CallStack();
     }
 }

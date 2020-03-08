@@ -23,6 +23,7 @@ namespace StyleChange.Model.Commands
 
         public override bool Execute()
         {
+            CreateSnapshot();
             return changeWallpaper.ChangeWallpaper(PathToImage);
         }
 
@@ -36,6 +37,12 @@ namespace StyleChange.Model.Commands
         /// <summary>
         /// Возвращает или задает путь до картинки, которая будет поставлена на обои рабочего стола
         /// </summary>
-        public string PathToImage { get; set; }
+        public string PathToImage { get; private set; }
+
+        protected override void CreateSnapshot()
+        {
+            // читаем данны из реестра через объект, отвечающий за реестр
+            throw new NotImplementedException();
+        }
     }
 }

@@ -54,9 +54,11 @@
     <Compile Include="Controllers\Senders\Sender.cs" />
     <Compile Include="Model\APIShell.cs" />
     <Compile Include="Model\Background.cs" />
+    <Compile Include="Model\Commands\CallStack.cs" />
     <Compile Include="Model\Colors.cs" />
     <Compile Include="Model\Commands\ChangeWallpaperCommand.cs" />
     <Compile Include="Model\Commands\Command.cs" />
+    <Compile Include="Model\Commands\UndoAction.cs" />
     <Compile Include="Model\SPIParameters\AccessibilityParameters.cs" />
     <Compile Include="Model\SPIParameters\DesktopParameters.cs" />
     <Compile Include="Model\SPIParameters\IconsParameters.cs" />
