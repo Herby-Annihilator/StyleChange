@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Controllers\Executors\ChangeWallpaperExecutor.cs" />
     <Compile Include="Controllers\Executors\Executor.cs" />
+    <Compile Include="Controllers\Executors\RegistryExecutor.cs" />
     <Compile Include="Controllers\Senders\Sender.cs" />
     <Compile Include="Model\APIShell.cs" />
     <Compile Include="Model\Background.cs" />
